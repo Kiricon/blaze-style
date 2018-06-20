@@ -20,9 +20,13 @@ button {
     transition: ease background 0.3s;
     outline: none;
 
-    @include colors($default-background);
+    @include colors($primary);
 
     &.success {
         @include colors($success);
+    }
+
+    &.warning {
+        @include colors($warning);
     }
 }
