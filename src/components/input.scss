@@ -1,0 +1,31 @@
+@import '../utils/colors';
+@mixin colors($color) {
+    border: solid 1px $color;
+}
+
+input {
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(10,10,10,.1);
+
+    @include colors($primary);
+
+    &:focus {
+        border-color: #3273dc;
+        box-shadow: 0 0 0 0.125em rgba(50,115,220,.25);
+    }
+
+    &.success {
+        @include colors($success);
+    }
+    
+    &.warning {
+        @include colors($warning);
+    }
+
+    &.danger {
+        @include colors($danger);
+    }
+}
