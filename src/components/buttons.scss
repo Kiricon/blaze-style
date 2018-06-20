@@ -1,0 +1,10 @@
+@import '../utils/colors';
+
+button {
+    font-size: 1em;
+    padding: 0.5em 1em;
+    background: $default-background;
+    border-color: $default-border;
+    border-radius: 3px;
+    cursor: pointer;
+}
