@@ -1,18 +1,28 @@
 @import '../utils/colors';
+$default-border: white;
+
+@mixin colors($color) {
+    background: $color;
+    border-color: $color;
+
+    &:hover {
+        color: $color;
+        background: $default-border;
+    }
+}
 
 button {
     font-size: 1em;
     padding: 0.5em 1em;
-    background: $default-background;
-    border-color: $default-background;
     color: $default-border;
     border-radius: 3px;
     cursor: pointer;
     transition: ease background 0.3s;
     outline: none;
-    
-    &:hover {
-        background: $default-border;
-        color: $default-background;
+
+    @include colors($default-background);
+
+    &.success {
+        @include colors($success);
     }
 }
