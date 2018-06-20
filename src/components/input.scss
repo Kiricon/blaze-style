@@ -1,4 +1,4 @@
-@import '../utils/colors';
+@import 'defaults';
 @mixin colors($color) {
     border: solid 1px $color;
 }
