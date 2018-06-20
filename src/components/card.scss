@@ -1,0 +1,17 @@
+@import 'defaults';
+
+card, .card {
+
+    display: table;
+    background: white;
+    padding: 0.5em;
+    border-radius: 3px;
+
+    @for $i from 1 through 100 {
+
+        // for each $col_#{i} 
+        &.level-#{$i} {
+            @include box_shadow($i);
+        }
+      }
+}

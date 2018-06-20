@@ -33,6 +33,7 @@ button {
     transition: ease background 0.3s;
     outline: none;
     position: relative;
+    margin: 0.5em;
 
     @include colors($primary);
 
