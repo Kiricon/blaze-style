@@ -29,4 +29,8 @@ button {
     &.warning {
         @include colors($warning);
     }
+
+    &.danger {
+        @include colors($danger);
+    }
 }
