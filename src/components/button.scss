@@ -11,10 +11,10 @@ $default-border: white;
     }
 
     &.loading {
-        color: $color;
+        color: $color !important;
 
         &:hover {
-            color: $color;
+            background: $color;
         }
     }
 }
@@ -49,24 +49,4 @@ button {
         @include colors($danger);
     }
 
-    &.loading {
-
-        color: $default-border;
-
-        &:before {
-            content: '';
-            box-sizing: border-box;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 20px;
-            height: 20px;
-            margin-top: -10px;
-            margin-left: -10px;
-            border-radius: 50%;
-            border: 2px solid $default-border;
-            border-top-color: $primary;
-            animation: spinner .6s linear infinite;
-        }
-    }
 }
