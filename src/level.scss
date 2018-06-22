@@ -1,0 +1,9 @@
+@import 'defaults';
+
+@for $i from 1 through 100 {
+
+    // for each $col_#{i} 
+    .level-#{$i} {
+        @include box_shadow($i);
+    }
+  }
