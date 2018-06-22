@@ -5,6 +5,13 @@
         cursor: pointer;
         padding: $padding;
         border-bottom: solid 1px #ddd;
+        background: rgba(0,0,0,0);
+        transition: ease all $transition-time;
+
+        &:hover {
+            background: $primary;
+            color: white;
+        }
 
         &:last-child {
             border-bottom: none;

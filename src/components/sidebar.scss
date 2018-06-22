@@ -5,7 +5,7 @@ sidebar, .sidebar, side-bar {
     padding: $padding;
     background: white;
     display: block;
-    transition: transform 0.3s ease;
+    transition: transform $transition-time ease;
     will-change: transform;
     transform: translateX(-100%);
 
