@@ -1,0 +1,13 @@
+@import 'defaults';
+
+.menu {
+    .item {
+        cursor: pointer;
+        padding: $padding;
+        border-bottom: solid 1px #ddd;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+}
