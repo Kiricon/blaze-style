@@ -4,4 +4,12 @@ sidebar, .sidebar, side-bar {
     height: 100%;
     padding: $padding;
     background: white;
+    display: block;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    transform: translateX(-100%);
+
+    &.open {
+        transform: translateX(0);
+    }
 }
