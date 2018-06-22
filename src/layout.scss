@@ -1,3 +1,5 @@
+@import 'defaults';
+
 .pull-right {
     float: right;
 }
@@ -12,4 +14,8 @@
 
 .align-left {
     text-align: left;
+}
+
+.padding {
+    padding: $padding;
 }

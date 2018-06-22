@@ -1,0 +1,14 @@
+@import 'defaults';
+
+navbar, .navbar {
+    position: fixed;
+    background: $primary;
+    color: white;
+    width: 100%;
+    font-size: 1em;
+    padding: $padding * 2;
+}
+
+.has-navbar {
+    padding-top: $padding * 8 !important;
+}
