@@ -3,6 +3,9 @@ $success: #23d160;
 $warning: #ffdd57;
 $danger: #ff3860;
 
+$b-primary: #fff;
+$b-secondary: #ddd;
+
 $border-radius: 3px;
 $padding: 0.5em;
 
@@ -10,7 +13,7 @@ $transition-time: 0.1s;
 
 .loading {
 
-    color: white;
+    color: $b-primary;
 
     &:before {
         content: '';
@@ -23,7 +26,7 @@ $transition-time: 0.1s;
         margin-top: -10px;
         margin-left: -10px;
         border-radius: 50%;
-        border: 2px solid white;
+        border: 2px solid $b-primary;
         border-top-color: $primary;
         animation: spinner .6s linear infinite;
     }

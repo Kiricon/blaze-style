@@ -1,5 +1,4 @@
 @import 'defaults';
-$default-border: white;
 
 @mixin colors($color) {
     background: $color;
@@ -7,7 +6,7 @@ $default-border: white;
 
     &:hover {
         color: $color;
-        background: $default-border;
+        background: $b-primary;
     }
 
     &.loading {
@@ -27,7 +26,7 @@ $default-border: white;
 button {
     font-size: 1em;
     padding: $padding $padding * 2;
-    color: $default-border;
+    color: $b-primary;
     border-radius: $border-radius;
     cursor: pointer;
     transition: ease background $transition-time;

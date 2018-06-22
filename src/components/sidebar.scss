@@ -3,7 +3,7 @@ sidebar, .sidebar, side-bar {
     position: fixed;
     height: 100%;
     padding: $padding;
-    background: white;
+    background: $b-primary;
     display: block;
     transition: transform $transition-time ease;
     will-change: transform;
