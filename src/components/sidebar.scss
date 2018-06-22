@@ -1,0 +1,7 @@
+@import 'defaults';
+sidebar, .sidebar, side-bar {
+    position: fixed;
+    height: 100%;
+    padding: $padding;
+    background: white;
+}
