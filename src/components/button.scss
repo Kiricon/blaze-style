@@ -26,14 +26,14 @@ $default-border: white;
 
 button {
     font-size: 1em;
-    padding: 0.5em 1em;
+    padding: $padding $padding * 2;
     color: $default-border;
-    border-radius: 3px;
+    border-radius: $border-radius;
     cursor: pointer;
     transition: ease background 0.3s;
     outline: none;
     position: relative;
-    margin: 0.5em;
+    margin: $padding;
 
     @include colors($primary);
 
