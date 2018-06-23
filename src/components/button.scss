@@ -4,7 +4,7 @@
     background: $color;
     border-color: $color;
 
-    &:hover {
+    &:hover, &:disabled {
         color: $color;
         background: $b-primary;
     }
@@ -46,6 +46,10 @@ button {
 
     &.danger {
         @include colors($danger);
+    }
+
+    &:disabled {
+        cursor: not-allowed !important;
     }
 
 }

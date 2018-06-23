@@ -31,7 +31,7 @@ button {
   margin: 0.5em;
   background: #00d1b2;
   border-color: #00d1b2; }
-  button:hover {
+  button:hover, button:disabled {
     color: #00d1b2;
     background: #fff; }
   button.loading {
@@ -41,7 +41,7 @@ button {
   button.success {
     background: #23d160;
     border-color: #23d160; }
-    button.success:hover {
+    button.success:hover, button.success:disabled {
       color: #23d160;
       background: #fff; }
     button.success.loading {
@@ -51,7 +51,7 @@ button {
   button.warning {
     background: #ffdd57;
     border-color: #ffdd57; }
-    button.warning:hover {
+    button.warning:hover, button.warning:disabled {
       color: #ffdd57;
       background: #fff; }
     button.warning.loading {
@@ -61,13 +61,15 @@ button {
   button.danger {
     background: #ff3860;
     border-color: #ff3860; }
-    button.danger:hover {
+    button.danger:hover, button.danger:disabled {
       color: #ff3860;
       background: #fff; }
     button.danger.loading {
       color: #ff3860 !important; }
       button.danger.loading:hover {
         background: #ff3860; }
+  button:disabled {
+    cursor: not-allowed !important; }
 
 .loading {
   color: #fff; }
