@@ -12,7 +12,9 @@ input {
     margin: $padding;
     box-sizing: border-box;
 
-    width: calc(100% - 1em);
+    &[type="text"], &[type="email"], &[type="password"] { 
+        width: calc(100% - 1em);
+    }
 
     @include colors($primary);
 
