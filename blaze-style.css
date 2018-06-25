@@ -12,7 +12,7 @@
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 @keyframes spinner {
@@ -29,15 +29,15 @@ button {
   outline: none;
   position: relative;
   margin: 0.5em;
-  background: #00d1b2;
-  border-color: #00d1b2; }
+  background: #3273dc;
+  border-color: #3273dc; }
   button:hover, button:disabled {
-    color: #00d1b2;
+    color: #3273dc;
     background: #fff; }
   button.loading {
-    color: #00d1b2 !important; }
+    color: #3273dc !important; }
     button.loading:hover {
-      background: #00d1b2; }
+      background: #3273dc; }
   button.success {
     background: #23d160;
     border-color: #23d160; }
@@ -85,7 +85,7 @@ button {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 input {
@@ -96,7 +96,7 @@ input {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   margin: 0.5em;
   box-sizing: border-box;
-  border: solid 1px #00d1b2; }
+  border: solid 1px #3273dc; }
   input[type="text"], input[type="email"], input[type="password"] {
     width: calc(100% - 1em); }
   input:focus {
@@ -123,7 +123,7 @@ input {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 modal, .modal {
@@ -131,9 +131,11 @@ modal, .modal {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
-  display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  display: none; }
+  modal.is-active, .modal.is-active {
+    display: flex; }
 
 .loading {
   color: #fff; }
@@ -149,7 +151,7 @@ modal, .modal {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 card, .card {
@@ -173,12 +175,12 @@ card, .card {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 navbar, .navbar {
   position: fixed;
-  background: #00d1b2;
+  background: #3273dc;
   color: #fff;
   width: 100%;
   font-size: 1em;
@@ -201,7 +203,7 @@ navbar, .navbar {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 sidenav, .sidenav, side-nav {
@@ -230,7 +232,7 @@ sidenav, .sidenav, side-nav {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 .pull-right {
@@ -247,6 +249,9 @@ sidenav, .sidenav, side-nav {
 
 .padding {
   padding: 0.5em; }
+
+.hidden {
+  display: none; }
 
 .level-1 {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
@@ -277,7 +282,7 @@ sidenav, .sidenav, side-nav {
     margin-left: -10px;
     border-radius: 50%;
     border: 2px solid #fff;
-    border-top-color: #00d1b2;
+    border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
 .menu .item {
@@ -286,7 +291,7 @@ sidenav, .sidenav, side-nav {
   border-bottom: solid 1px #ddd;
   transition: ease all 0.1s; }
   .menu .item:hover {
-    background: #00d1b2;
+    background: #3273dc;
     color: white; }
   .menu .item:last-child {
     border-bottom: none; }
