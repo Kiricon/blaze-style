@@ -8,8 +8,11 @@ sidenav, .sidenav, side-nav {
     transition: transform $transition-time ease;
     will-change: transform;
     transform: translateX(-100%);
+    box-sizing: border-box;
+
 
     &.open {
         transform: translateX(0);
     }
+
 }

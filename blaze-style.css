@@ -108,6 +108,8 @@ input {
     border: solid 1px #ffdd57; }
   input.danger {
     border: solid 1px #ff3860; }
+  input.rounded {
+    border-radius: 1em; }
 
 .loading {
   color: #fff; }
@@ -183,8 +185,7 @@ navbar, .navbar {
   background: #3273dc;
   color: #fff;
   width: 100%;
-  font-size: 1em;
-  padding: 1em; }
+  padding: 0.5em; }
 
 .has-navbar {
   padding-top: 4em !important; }
@@ -214,7 +215,8 @@ sidenav, .sidenav, side-nav {
   display: block;
   transition: transform 0.1s ease;
   will-change: transform;
-  transform: translateX(-100%); }
+  transform: translateX(-100%);
+  box-sizing: border-box; }
   sidenav.open, .sidenav.open, side-nav.open {
     transform: translateX(0); }
 
