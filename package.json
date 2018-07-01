@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "build": "node-sass src/index.scss blaze-style.css",
+    "build": "node-sass src/index.scss blaze-style.css && node-sass src/index.scss blaze-style.min.css --output-style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
