@@ -3,18 +3,24 @@
 joined, .joined {
     max-width: 100%;
     display: flex;
+    border: solid 1px $primary;
+    border-radius: $border-radius;
 
-    input, button {
+    *, *:hover, *:active {
         margin: 0px;
+        border-radius: 0px;
+        border: none;
+        border-right: solid 1px $primary;
 
         &:first-child {
-            border-top-right-radius: 0px;
-            border-bottom-right-radius: 0px;
+            border-top-left-radius: $border-radius;
+            border-bottom-left-radius: $border-radius;
         }
 
-        &:nth-child(2) {
-            border-top-left-radius: 0px;
-            border-bottom-left-radius: 0px;
+        &:last-child {
+            border-top-right-radius: $border-radius;
+            border-bottom-right-radius: $border-radius;
+            border-right: none;
         }
     }
 }
