@@ -48,7 +48,7 @@ button {
         @include colors($danger);
     }
 
-    &:disabled {
+    &:disabled, &.loading {
         cursor: not-allowed !important;
     }
 
