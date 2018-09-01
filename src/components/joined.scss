@@ -1,0 +1,20 @@
+@import '../defaults';
+
+joined, .joined {
+    max-width: 100%;
+    display: flex;
+
+    input, button {
+        margin: 0px;
+
+        &:first-child {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+
+        &:nth-child(2) {
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+    }
+}
