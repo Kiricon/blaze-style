@@ -7,7 +7,9 @@ $b-primary: #fff;
 $b-secondary: #ddd;
 
 $border-radius: 3px;
-$padding: 0.5em;
+$default-size: 1em;
+$padding: $default-size / 2;
+$font-size: $default-size;
 
 $transition-time: 0.1s;
 
