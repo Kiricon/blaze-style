@@ -6,7 +6,7 @@ joined, .joined {
     border: solid 1px $primary;
     border-radius: $border-radius;
 
-    *, *:hover, *:active {
+    *, *:hover, *:active, .icon-input, icon-input {
         margin: 0px;
         border-radius: 0px;
         border: none;

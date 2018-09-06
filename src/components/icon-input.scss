@@ -1,7 +1,10 @@
 @import '../defaults';
 icon-input, .icon-input {
 
-    width: 100%;
+    width: calc(100% - $padding * 2);
+    margin: $padding;
+    display: inline-block;
+    box-sizing: border-box;
 
     .icon, i {
         position: absolute;
