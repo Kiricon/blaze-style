@@ -15,6 +15,10 @@
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
 @keyframes spinner {
   to {
     transform: rotate(360deg); } }
@@ -68,7 +72,7 @@ button {
       color: #ff3860 !important; }
       button.danger.loading:hover {
         background: #ff3860; }
-  button:disabled {
+  button:disabled, button.loading {
     cursor: not-allowed !important; }
 
 .loading {
@@ -88,6 +92,10 @@ button {
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
 input {
   border-radius: 3px;
   font-size: 1em;
@@ -96,12 +104,13 @@ input {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   margin: 0.5em;
   box-sizing: border-box;
+  height: 2em;
   border: solid 1px #3273dc; }
   input[type="text"], input[type="email"], input[type="password"] {
-    width: calc(100% - 1em); }
+    width: calc(100% - $padding * 2); }
   input:focus {
     border-color: #3273dc;
-    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
+    outline: none; }
   input.success {
     border: solid 1px #23d160; }
   input.warning {
@@ -127,6 +136,10 @@ input {
     border: 2px solid #fff;
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
 
 modal, .modal {
   position: fixed;
@@ -156,6 +169,10 @@ modal, .modal {
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
 card, .card {
   display: table;
   background: #fff;
@@ -179,6 +196,10 @@ card, .card {
     border: 2px solid #fff;
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
 
 navbar, .navbar {
   position: fixed;
@@ -206,6 +227,10 @@ navbar, .navbar {
     border: 2px solid #fff;
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
 
 sidenav, .sidenav, side-nav {
   position: fixed;
@@ -236,6 +261,10 @@ sidenav, .sidenav, side-nav {
     border: 2px solid #fff;
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
 
 .pull-right {
   float: right; }
@@ -287,6 +316,10 @@ sidenav, .sidenav, side-nav {
     border-top-color: #3273dc;
     animation: spinner .6s linear infinite; }
 
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
 .menu .item {
   cursor: pointer;
   padding: 0.5em;
@@ -298,8 +331,87 @@ sidenav, .sidenav, side-nav {
   .menu .item:last-child {
     border-bottom: none; }
 
+.loading {
+  color: #fff; }
+  .loading:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: #3273dc;
+    animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
+joined, .joined {
+  display: inline-flex;
+  border: solid 1px #3273dc;
+  border-radius: 3px; }
+  joined *, joined *:hover, joined *:active, joined .icon-input, joined icon-input, .joined *, .joined *:hover, .joined *:active, .joined .icon-input, .joined icon-input {
+    margin: 0px;
+    border-radius: 0px;
+    border: none;
+    border-right: solid 1px #3273dc; }
+    joined *:first-child, joined *:hover:first-child, joined *:active:first-child, joined .icon-input:first-child, joined icon-input:first-child, .joined *:first-child, .joined *:hover:first-child, .joined *:active:first-child, .joined .icon-input:first-child, .joined icon-input:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px; }
+    joined *:last-child, joined *:hover:last-child, joined *:active:last-child, joined .icon-input:last-child, joined icon-input:last-child, .joined *:last-child, .joined *:hover:last-child, .joined *:active:last-child, .joined .icon-input:last-child, .joined icon-input:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-right: none; }
+
+.loading {
+  color: #fff; }
+  .loading:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    border-top-color: #3273dc;
+    animation: spinner .6s linear infinite; }
+
+.rounded {
+  border-radius: 1em;
+  overflow: hidden; }
+
+icon-input, .icon-input {
+  width: calc(100% - $padding * 2);
+  margin: 0.5em;
+  display: inline-block;
+  box-sizing: border-box; }
+  icon-input .icon, icon-input i, .icon-input .icon, .icon-input i {
+    position: absolute;
+    font-size: 1em;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+    color: #888;
+    border: none; }
+  icon-input input, .icon-input input {
+    width: 100%;
+    padding-left: 2em;
+    margin: 0px; }
+
 html, body {
   margin: 0px;
   padding: 0px;
   min-height: 100%;
   min-width: 100%; }
+
+.joined {
+  margin: 20px; }
