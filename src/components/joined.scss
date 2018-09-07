@@ -1,8 +1,7 @@
 @import '../defaults';
 
 joined, .joined {
-    max-width: 100%;
-    display: flex;
+    display: inline-flex;
     border: solid 1px $primary;
     border-radius: $border-radius;
 
