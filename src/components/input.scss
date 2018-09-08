@@ -33,9 +33,3 @@ input[type="text"], input[type="email"], input[type="password"] {
         @include colors($danger);
     }
 }
-
-label {
-    input[type="checkbox"] {
-        
-    }
-}
