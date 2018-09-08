@@ -3,7 +3,7 @@
     border: solid 1px $color;
 }
 
-input {
+input[type="text"], input[type="email"], input[type="password"] {
     border-radius: $border-radius;
     font-size: $font-size;
     padding: $padding $padding * 2;
@@ -12,10 +12,6 @@ input {
     margin: $padding;
     box-sizing: border-box;
     height: $default-size * 2;
-
-    &[type="text"], &[type="email"], &[type="password"] { 
-        width: calc(100% - $padding * 2);
-    }
 
     @include colors($primary);
 
@@ -36,8 +32,10 @@ input {
     &.danger {
         @include colors($danger);
     }
+}
 
-    &.rounded {
-        border-radius: $padding * 2;   
+label {
+    input[type="checkbox"] {
+        
     }
 }

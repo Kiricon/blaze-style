@@ -1,7 +1,6 @@
 @import '../defaults';
 icon-input, .icon-input {
 
-    width: calc(100% - $padding * 2);
     margin: $padding;
     display: inline-block;
     box-sizing: border-box;
@@ -15,7 +14,7 @@ icon-input, .icon-input {
         border: none;
     }
 
-    input {
+    input[type="text"], input[type="email"], input[type="password"] {
         width: 100%;
         padding-left: $padding * 4;
         margin: 0px;
