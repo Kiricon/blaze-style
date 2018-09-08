@@ -3,7 +3,7 @@
     border: solid 1px $color;
 }
 
-input[type="text"], input[type="email"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"], textarea {
     border-radius: $border-radius;
     font-size: $font-size;
     padding: $padding $padding * 2;
