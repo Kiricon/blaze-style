@@ -1,12 +1,12 @@
-$primary: #3273dc;
-$success: #23d160;
-$warning: #ffdd57;
-$danger: #ff3860;
+$primary: var(--primary, #3273dc);
+$success: var(--success, #23d160);
+$warning: var(--warning, #ffdd57);
+$danger: var(--danger, #ff3860);
 
-$b-primary: #fff;
-$b-secondary: #ddd;
+$b-primary: var(--b-primary, #fff);
+$b-secondary: var(--b-secondary, #ddd);
 
-$border-radius: 3px;
+$border-radius: var(--border-radius, 3px);
 $default-size: 1em;
 $padding: $default-size / 2;
 $font-size: $default-size;
