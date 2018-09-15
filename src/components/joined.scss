@@ -5,11 +5,12 @@ joined, .joined {
     border: solid 1px $primary;
     border-radius: $border-radius;
 
-    input[type="text"], input[type="email"], input[type="password"], input[type="search"] *, *:hover, *:active, .icon-input, icon-input {
+    input[type="text"], input[type="email"], input[type="password"], input[type="search"], *, *:hover, *:active, .icon-input, icon-input {
         margin: 0px;
         border-radius: 0px;
         border: none;
         border-right: solid 1px $primary;
+        height: 100%;
 
         &:first-child {
             border-top-left-radius: $border-radius;
