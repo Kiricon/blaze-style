@@ -96,7 +96,7 @@ button {
   border-radius: 1em;
   overflow: hidden; }
 
-input {
+input[type="text"], input[type="email"], input[type="password"], textarea {
   border-radius: 3px;
   font-size: 1em;
   padding: 0.5em 1em;
@@ -106,19 +106,15 @@ input {
   box-sizing: border-box;
   height: 2em;
   border: solid 1px #3273dc; }
-  input[type="text"], input[type="email"], input[type="password"] {
-    width: calc(100% - $padding * 2); }
-  input:focus {
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus {
     border-color: #3273dc;
     outline: none; }
-  input.success {
+  input[type="text"].success, input[type="email"].success, input[type="password"].success, textarea.success {
     border: solid 1px #23d160; }
-  input.warning {
+  input[type="text"].warning, input[type="email"].warning, input[type="password"].warning, textarea.warning {
     border: solid 1px #ffdd57; }
-  input.danger {
+  input[type="text"].danger, input[type="email"].danger, input[type="password"].danger, textarea.danger {
     border: solid 1px #ff3860; }
-  input.rounded {
-    border-radius: 1em; }
 
 .loading {
   color: #fff; }
@@ -356,15 +352,15 @@ joined, .joined {
   display: inline-flex;
   border: solid 1px #3273dc;
   border-radius: 3px; }
-  joined *, joined *:hover, joined *:active, joined .icon-input, joined icon-input, .joined *, .joined *:hover, .joined *:active, .joined .icon-input, .joined icon-input {
+  joined input[type="text"], joined input[type="email"], joined input[type="password"], joined *, joined *:hover, joined *:active, joined .icon-input, joined icon-input, .joined input[type="text"], .joined input[type="email"], .joined input[type="password"], .joined *, .joined *:hover, .joined *:active, .joined .icon-input, .joined icon-input {
     margin: 0px;
     border-radius: 0px;
     border: none;
     border-right: solid 1px #3273dc; }
-    joined *:first-child, joined *:hover:first-child, joined *:active:first-child, joined .icon-input:first-child, joined icon-input:first-child, .joined *:first-child, .joined *:hover:first-child, .joined *:active:first-child, .joined .icon-input:first-child, .joined icon-input:first-child {
+    joined input[type="text"]:first-child, joined input[type="email"]:first-child, joined input[type="password"]:first-child, joined *:first-child, joined *:hover:first-child, joined *:active:first-child, joined .icon-input:first-child, joined icon-input:first-child, .joined input[type="text"]:first-child, .joined input[type="email"]:first-child, .joined input[type="password"]:first-child, .joined *:first-child, .joined *:hover:first-child, .joined *:active:first-child, .joined .icon-input:first-child, .joined icon-input:first-child {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px; }
-    joined *:last-child, joined *:hover:last-child, joined *:active:last-child, joined .icon-input:last-child, joined icon-input:last-child, .joined *:last-child, .joined *:hover:last-child, .joined *:active:last-child, .joined .icon-input:last-child, .joined icon-input:last-child {
+    joined input[type="text"]:last-child, joined input[type="email"]:last-child, joined input[type="password"]:last-child, joined *:last-child, joined *:hover:last-child, joined *:active:last-child, joined .icon-input:last-child, joined icon-input:last-child, .joined input[type="text"]:last-child, .joined input[type="email"]:last-child, .joined input[type="password"]:last-child, .joined *:last-child, .joined *:hover:last-child, .joined *:active:last-child, .joined .icon-input:last-child, .joined icon-input:last-child {
       border-top-right-radius: 3px;
       border-bottom-right-radius: 3px;
       border-right: none; }
@@ -391,7 +387,6 @@ joined, .joined {
   overflow: hidden; }
 
 icon-input, .icon-input {
-  width: calc(100% - $padding * 2);
   margin: 0.5em;
   display: inline-block;
   box-sizing: border-box; }
@@ -402,7 +397,7 @@ icon-input, .icon-input {
     margin-left: 0.5em;
     color: #888;
     border: none; }
-  icon-input input, .icon-input input {
+  icon-input input[type="text"], icon-input input[type="email"], icon-input input[type="password"], .icon-input input[type="text"], .icon-input input[type="email"], .icon-input input[type="password"] {
     width: 100%;
     padding-left: 2em;
     margin: 0px; }
