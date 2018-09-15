@@ -1,6 +1,6 @@
 {
   "name": "blaze-style",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "A minimal set of css styles ",
   "main": "index.js",
   "scripts": {

@@ -38,3 +38,24 @@ $transition-time: 0.1s;
     border-radius: $default-size;
     overflow:hidden;
 }
+
+@mixin colorTemplate($color) {
+    border: $color;
+    color: $color;
+}
+
+*.danger {
+    @include colorTemplate($danger);
+}
+
+*.warning {
+    @include colorTemplate($warning);
+}
+
+*.success {
+    @include colorTemplate($success);
+}
+
+*.primary {
+    @include colorTemplate($primary);
+}
