@@ -1,8 +1,7 @@
-@import '../defaults';
-
 @mixin colors($color) {
     background: $color;
     border-color: $color;
+    color: $b-primary;
 
     &:hover, &:disabled {
         color: $color;

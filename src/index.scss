@@ -1,14 +1,5 @@
-@import 'components/button';
-@import 'components/input';
-@import 'components/modal';
-@import 'components/card';
-@import 'components/navbar';
-@import 'components/sidenav';
-@import 'layout';
-@import 'level';
-@import 'components/menu';
-@import 'components/joined';
-@import 'components/icon-input';
+@import "defaults";
+@import "all";
 
 
 html, body {

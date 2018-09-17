@@ -50,7 +50,8 @@ button {
   position: relative;
   margin: 0.5em;
   background: var(--primary, #3273dc);
-  border-color: var(--primary, #3273dc); }
+  border-color: var(--primary, #3273dc);
+  color: var(--b-primary, #fff); }
   button:hover, button:disabled {
     color: var(--primary, #3273dc);
     background: var(--b-primary, #fff); }
@@ -60,7 +61,8 @@ button {
       background: var(--primary, #3273dc); }
   button.success {
     background: var(--success, #23d160);
-    border-color: var(--success, #23d160); }
+    border-color: var(--success, #23d160);
+    color: var(--b-primary, #fff); }
     button.success:hover, button.success:disabled {
       color: var(--success, #23d160);
       background: var(--b-primary, #fff); }
@@ -70,7 +72,8 @@ button {
         background: var(--success, #23d160); }
   button.warning {
     background: var(--warning, #ffdd57);
-    border-color: var(--warning, #ffdd57); }
+    border-color: var(--warning, #ffdd57);
+    color: var(--b-primary, #fff); }
     button.warning:hover, button.warning:disabled {
       color: var(--warning, #ffdd57);
       background: var(--b-primary, #fff); }
@@ -80,7 +83,8 @@ button {
         background: var(--warning, #ffdd57); }
   button.danger {
     background: var(--danger, #ff3860);
-    border-color: var(--danger, #ff3860); }
+    border-color: var(--danger, #ff3860);
+    color: var(--b-primary, #fff); }
     button.danger:hover, button.danger:disabled {
       color: var(--danger, #ff3860);
       background: var(--b-primary, #fff); }
