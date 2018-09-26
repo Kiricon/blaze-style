@@ -95,43 +95,6 @@ button {
   button:disabled, button.loading {
     cursor: not-allowed !important; }
 
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
-
 input[type="text"], input[type="email"], input[type="password"], input[type="search"], textarea {
   border-radius: var(--border-radius, 3px);
   font-size: 1em;
@@ -152,43 +115,6 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
   input[type="text"].danger, input[type="email"].danger, input[type="password"].danger, input[type="search"].danger, textarea.danger {
     border: solid 1px var(--danger, #ff3860); }
 
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
-
 modal, .modal {
   position: fixed;
   width: 100%;
@@ -200,86 +126,12 @@ modal, .modal {
   modal.is-active, .modal.is-active {
     display: flex; }
 
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
-
 card, .card {
   display: table;
   background: var(--b-primary, #fff);
   padding: 0.5em;
   border-radius: var(--border-radius, 3px);
   box-sizing: content-box; }
-
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
 
 navbar, .navbar {
   position: fixed;
@@ -290,43 +142,6 @@ navbar, .navbar {
 
 .has-navbar {
   padding-top: 4em !important; }
-
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
 
 sidenav, .sidenav, side-nav {
   position: fixed;
@@ -411,43 +226,6 @@ sidenav, .sidenav, side-nav {
 .level-5 {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); }
 
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
-
 .menu .item {
   cursor: pointer;
   padding: 0.5em;
@@ -458,43 +236,6 @@ sidenav, .sidenav, side-nav {
     color: white; }
   .menu .item:last-child {
     border-bottom: none; }
-
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
 
 joined, .joined {
   display: inline-flex;
@@ -513,43 +254,6 @@ joined, .joined {
       border-top-right-radius: var(--border-radius, 3px);
       border-bottom-right-radius: var(--border-radius, 3px);
       border-right: none; }
-
-.loading {
-  color: var(--b-primary, #fff); }
-  .loading:before {
-    content: '';
-    box-sizing: border-box;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 20px;
-    margin-top: -10px;
-    margin-left: -10px;
-    border-radius: 50%;
-    border: 2px solid var(--b-primary, #fff);
-    border-top-color: var(--primary, #3273dc);
-    animation: spinner .6s linear infinite; }
-
-.rounded {
-  border-radius: 1em;
-  overflow: hidden; }
-
-*.danger {
-  border: var(--danger, #ff3860);
-  color: var(--danger, #ff3860); }
-
-*.warning {
-  border: var(--warning, #ffdd57);
-  color: var(--warning, #ffdd57); }
-
-*.success {
-  border: var(--success, #23d160);
-  color: var(--success, #23d160); }
-
-*.primary {
-  border: var(--primary, #3273dc);
-  color: var(--primary, #3273dc); }
 
 icon-input, .icon-input {
   margin: 0.5em;

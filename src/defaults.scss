@@ -13,6 +13,14 @@ $font-size: $default-size;
 
 $transition-time: 0.1s;
 
+@keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes spinner {
+    to {transform: rotate(360deg);}
+}
+
 .loading {
 
     color: $b-primary;
@@ -30,7 +38,8 @@ $transition-time: 0.1s;
         border-radius: 50%;
         border: 2px solid $b-primary;
         border-top-color: $primary;
-        animation: spinner .6s linear infinite;
+        -webkit-animation: spinner 1.1s infinite linear;
+        animation: spinner 1.1s infinite linear;
     }
 }
 
