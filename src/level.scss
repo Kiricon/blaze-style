@@ -14,10 +14,15 @@
 
 }
 
-@for $i from 1 through 100 {
-
-    // for each $col_#{i} 
+@for $i from 1 through 5 {
     .level-#{$i} {
         @include box_shadow($i);
     }
-  }
+}
+
+@for $i from 1 through 10 {
+    .z-level-#{$i}, .z-index-#{$i} {
+        z-index: (100 * $i);
+    }
+}
+
