@@ -28,6 +28,7 @@ button {
     outline: none;
     position: relative;
     margin: $padding;
+    border:none;
 
     @include colors($primary);
 
